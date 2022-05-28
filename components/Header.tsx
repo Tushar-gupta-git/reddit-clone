@@ -40,7 +40,11 @@ function Header() {
             <Image src="https://links.papareact.com/23l"
             objectFit="contain" layout="fill"/>
          </div>
-         <p className="text-gray-400">Sign Out</p>
+         <div className="flex-1 text-xs">
+         <p>{session?.user?.name}</p>
+         <p className="text-gray-400">karma 1</p>
+         </div>
+         <ChevronDownIcon className="flex-shrink-0 text-gray-500 h-5"/>
         </div>
 
             ):(
